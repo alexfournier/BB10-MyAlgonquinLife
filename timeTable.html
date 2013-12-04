@@ -10,55 +10,65 @@
 			
 			<!-- INPUTS -->
 			<div data-bb-type="label-control-container">
+				
 				<div data-bb-type="row">
 				   	<div data-bb-type="label">Course Name</div>
-				   	<input id="courseName" type="text"/>
+				   	<input id="courseName" type="text" placeholder="Course Name"/>
 				</div>
+				
 				<div data-bb-type="row">
-				   	<div data-bb-type="label">Classroom Number</div>
-				   	<input id="classNumber" type="text"/>
+				   	<div data-bb-type="label">Classroom #</div>
+				   	<input id="classNumber" type="text" placeholder="Room / Building Number"/>
 				</div>
 
-				<select id="weekDay">
-					<option selected="true">MONDAY</option>
-					<option>TUESDAY</option>
-					<option>WEDNESDAY</option>
-					<option>THURSDAY</option>
-					<option>FRIDAY</option>
-					<option>SATURDAY</option>
-					<option>SUNDAY</option>
-				</select>
-				<select id="time">
-					<option selected="true">8</option>
-					<option>9</option>
-					<option>10</option>
-					<option>11</option>
-					<option>12</option>
-					<option>1pm</option>
-					<option>2pm</option>
-				</select>
-				<select id="eventLength">
-					<option selected="true">1 hour 30 min</option>
-					<option>1 hour 40 min</option>
-					<option>1 hour 50 min</option>
-					<option>2 hours</option>
-					<option>3 hours</option>
-				</select>
+		        <select id="weekDay" data-bb-label="Day of the Week">
+					<option value="0" >Select</option>
+					<option value="1">Monday</option>
+					<option value="2">Tuesday</option>
+					<option value="3">Wednesday</option>
+					<option value="4">Thursday</option>
+					<option value="5">Friday</option>
+		        </select>
+     
+				<select id="time" data-bb-label="Time">
+					<option id="0" value="0" selected="true">Select</option>
+					<option value="1">1:00</option>
+					<option value="2">2:00</option> 
+					<option value="3">3:00</option> 
+					<option value="4">4:00</option> 
+					<option value="5">5:00</option> 
+					<option value="6">6:00</option> 
+					<option value="7">7:00</option> 
+					<option value="8">8:00</option> 
+					<option value="9">9:00</option> 
+					<option value="10">10:00</option> 
+					<option value="11">11:00</option> 
+					<option value="12">12:00</option> 
+        		</select>
+				
+				<select id="timePart" data-bb-label="">
+					<option value="1">AM</option>
+					<option value="2">PM</option>
+		        </select>
+			
+				<select id="eventLength" data-bb-label="Class Duration">
+					<option value="0" selected="true">Select</option> 
+					<option value="60">1 Hour</option>
+					<option value="90">1 Hour 30 Min</option>
+					<option value="120">2 Hours</option>
+					<option value="150">2 Hours 30 Min</option>
+					<option value="180">3 Hours</option>
+					<option value="720">All Day Event</option>
+          		</select>
 				
 				<table>
                     <tr>
-                        <td class="cell first" style="padding-top:7px;">This Class is a Lab: </td>
+                        <td class="cell first" style="padding-top:7px;">This Class is a Lab?</td>
                         <td  class="cell">
                                 <div data-bb-type="toggle" data-bb-checked="true" data-bb-on="Yes" data-bb-off="No" id="labChoice"/></div>
                         </td>
                     </tr>
                 </table>
-				
-				<select id="reminderLength">
-					<option selected="true">15 min</option>
-					<option>30 min</option>
-					<option>1 hour</option>
-				</select>
 				
 				<table>
                     <tr>
@@ -68,6 +78,15 @@
                         </td>
                     </tr>
                 </table>
+
+				<select id="reminderLength" data-bb-label="Alert set at">
+					<option value="0">Select</option>
+					<option value="15">15 Minutes</option>
+					<option value="30">30 Minutes</option>
+					<option value="60">1 Hour</option>
+					<option value="120">2 Hours</option>
+					<option value="1440">1 Day</option>
+          		</select>
 			</div>
 
 			<!-- BUTTON'S -->
