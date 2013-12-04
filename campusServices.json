@@ -1,0 +1,132 @@
+{
+    "services": [
+        {
+            "id": 0,
+            "locationName": "Food and Beverage",
+            "locations": [
+                {
+                    "locationName": "35th Street Market Café",
+                    "building": "Residence"
+                },
+                {
+                    "locationName": "Bits N' Bytes",
+                    "building": "T Building"
+                },
+                {
+                    "locationName": "Thunder Alley",
+                    "building": "A Building"
+                },
+                {
+                    "locationName": "The Portable Feast",
+                    "building": "B Building"
+                },
+                {
+                    "locationName": "The Observatory",
+                    "building": "A Building"
+                },
+                {
+                    "locationName": "The Fix Eatery",
+                    "building": "ACCE Building"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "locationName": "Health Services",
+            "locations": [
+                {
+                    "locationName": "Ottawa Campus",
+                    "building": "C Building"
+                },
+                {
+                    "locationName": "Pembroke Campus",
+                    "building": "Room 127"
+                },
+                {
+                    "locationName": "Perth Campus",
+                    "building": "7 Craig Street"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "locationName": "Gym",
+            "locations": [
+                {
+                    "locationName": "Algonquin Fitness Zone",
+                    "building": "A Building"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "locationName": "Mail Services",
+            "locations": [
+                {
+                    "locationName": "Woodroffe Campus",
+                    "building": "A Building"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "locationName": "Technology Store",
+            "locations": [
+                {
+                    "locationName": "Woodroffe Campus",
+                    "building": "D Building"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "locationName": "Peer Tutoring",
+            "locations": [
+                {
+                    "locationName": "Woodroffe Campus",
+                    "building": "E Building"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "locationName": "Spiritual Center",
+            "locations": [
+                {
+                    "locationName": "Woodroffe Campus",
+                    "building": "E Building"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "locationName": "Student Commons",
+            "locations": [
+                {
+                    "locationName": "Woodroffe Campus",
+                    "building": "E Building"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "locationName": "Day Care Center",
+            "locations": [
+                {
+                    "locationName": "Woodroffe Campus",
+                    "building": "K Building"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "locationName": "Sports Therapy Clinic",
+            "locations": [
+                {
+                    "locationName": "Woodroffe Campus",
+                    "building": "Z Building"
+                }
+            ]
+        }
+    ]
+}

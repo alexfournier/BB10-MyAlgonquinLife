@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<div id='master' data-bb-type="screen" data-bb-effect="slide-left">
+	<div data-bb-type="title" data-bb-caption="My Timetable"></div>
+
+	<!-- START OF ADD TIMETABLE -->
+	<div id="addTimeTable" data-bb-effect="slide-left">
+		<div data-bb-type="round-panel">
+			<div data-bb-type="panel-header">Add & Edit Your Timetable</div>
+			
+			<!-- INPUTS -->
+			<div data-bb-type="label-control-container">
+				<div data-bb-type="row">
+				   	<div data-bb-type="label">Course Name</div>
+				   	<input id="courseName" type="text"/>
+				</div>
+				<div data-bb-type="row">
+				   	<div data-bb-type="label">Classroom Number</div>
+				   	<input id="classNumber" type="text"/>
+				</div>
+
+				<select id="weekDay">
+					<option selected="true">MONDAY</option>
+					<option>TUESDAY</option>
+					<option>WEDNESDAY</option>
+					<option>THURSDAY</option>
+					<option>FRIDAY</option>
+					<option>SATURDAY</option>
+					<option>SUNDAY</option>
+				</select>
+				<select id="time">
+					<option selected="true">8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>1pm</option>
+					<option>2pm</option>
+				</select>
+				<select id="eventLength">
+					<option selected="true">1 hour 30 min</option>
+					<option>1 hour 40 min</option>
+					<option>1 hour 50 min</option>
+					<option>2 hours</option>
+					<option>3 hours</option>
+				</select>
+				
+				<table>
+                    <tr>
+                        <td class="cell first" style="padding-top:7px;">This Class is a Lab: </td>
+                        <td  class="cell">
+                                <div data-bb-type="toggle" data-bb-checked="true" data-bb-on="Yes" data-bb-off="No" id="labChoice"/></div>
+                        </td>
+                    </tr>
+                </table>
+				
+				<select id="reminderLength">
+					<option selected="true">15 min</option>
+					<option>30 min</option>
+					<option>1 hour</option>
+				</select>
+				
+				<table>
+                    <tr>
+                        <td class="cell first" style="padding-top:7px;">Reminder: </td>
+                        <td  class="cell">
+                                <div data-bb-type="toggle" data-bb-checked="true" data-bb-on="On" data-bb-off="Off" id="reminderChoice"/></div>
+                        </td>
+                    </tr>
+                </table>
+			</div>
+
+			<!-- BUTTON'S -->
+			<div data-bb-type="row">
+			   	<div data-bb-type="button" data-bb-style="stretch" onclick="saveEvent();">Save To Calender</div>
+			   	<div data-bb-type="button" data-bb-style="stretch" onclick="">Delete</div>
+		   	</div>
+		</div>
+	</div>
+
+	<!-- MY TIMETABLE START -->
+	<div id="myTimeTable" style="display:none" data-bb-effect="slide-left">
+		<div data-bb-type="round-panel">
+			<div data-bb-type="panel-header">Your Daily Timetable</div>
+			
+			<!-- INPUTS -->
+			<div data-bb-type="label-control-container">
+				<div data-bb-type="row">
+				   	<div data-bb-type="label">MONDAY</div>
+				   	<input id="monday" type="text"/>
+				</div>
+				<div data-bb-type="row">
+				   	<div data-bb-type="label">TUESDAY</div>
+				   	<input id="tuesday" type="text"/>
+				</div>
+				<div data-bb-type="row">
+				   	<div data-bb-type="label">WEDNESDAY</div>
+				   	<input id="tuesday" type="text"/>
+				</div>
+				<div data-bb-type="row">
+				   	<div data-bb-type="label">THURSDAY</div>
+				   	<input id="tuesday" type="text"/>
+				</div>
+				<div data-bb-type="row">
+				   	<div data-bb-type="label">FRIDAY</div>
+				   	<input id="tuesday" type="text"/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ACTION BAR START -->
+	<div data-bb-type="action-bar" data-bb-back-caption="Back">
+		
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="images/plus.png" onclick="showTab('addTimeTable')">Edit/Add</div>	
+	
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="images/cal.png" onclick="showTab('myTimetable')">View All</div>
+	
+	</div>
+</div>

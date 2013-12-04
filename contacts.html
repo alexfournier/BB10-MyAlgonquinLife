@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<div id='master' data-bb-type="screen" data-bb-effect="slide-left">
+	<div data-bb-type="title" data-bb-caption="Contacts"></div>
+
+	<!-- START OF CONTACT LIST -->
+	<div id="contactList" data-bb-effect="slide-left">
+		<div data-bb-type="round-panel">
+			<div data-bb-type="panel-header">All Contacts</div>
+		</div>
+		<div id="allContacts" data-bb-type="image-list" data-bb-image="none" style="display-none" data-bb-style="arrowbuttons"></div>
+	</div>
+
+	<!-- START OF ADD CONTACT -->
+	<div id="addContact" style="display:none" data-bb-effect="slide-left">
+		<div data-bb-type="round-panel">
+			<div data-bb-type="panel-header">Add A Contact</div>
+			
+			<!-- INPUTS -->
+			<div data-bb-type="label-control-container">
+				<div data-bb-type="row">
+				   	<div data-bb-type="label">First Name</div>
+				   	<input id="fName" type="text"/>
+				</div>
+				<div data-bb-type="row">
+				   	<div data-bb-type="label">Last Name</div>
+				   	<input id="lName" type="text"/>
+				</div>
+				<div data-bb-type="row">
+				   <div data-bb-type="label">Home Phone</div>
+				   <input id="hPhone" type="tel"/>
+				</div>
+				<div data-bb-type="row">
+				   <div data-bb-type="label">Cell Phone</div>
+				   <input id="cPhone" type="tel"/>
+				</div>
+				<div data-bb-type="row">
+					<div data-bb-type="label">Home Email</div>
+				   	<input id="hEmail" type="email" placeholder="home@gmail.com"/>
+				</div>
+				<div data-bb-type="row">
+					<div data-bb-type="label">School Email</div>
+				   	<input id="sEmail" type="email" placeholder="schoolEmail@gmail.com"/>
+				</div>
+				<div data-bb-type="row">
+			   		<div data-bb-type="label">Description</div>
+			   		<input type="text" id="cNote" placeholder="Notes"></input>
+				</div>
+			</div>
+
+			<!-- SUBMIT BUTTON -->
+			<div data-bb-type="row">
+			   	<div data-bb-type="button" data-bb-style="stretch" onclick="createContact();">Save Contact</div>
+		   	</div>
+		</div>
+	</div>
+	<!-- END PAGE DIV'S -->
+
+	<!-- ACTION BAR START -->
+	<div data-bb-type="action-bar" data-bb-back-caption="Back">
+		
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="images/db.png" onclick="showTab('contactList')">Contacts</div>	
+	
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="images/addContact.png" onclick="showTab('addContact')">New Contact</div>
+	
+	</div>
+	<!-- ACTION BAR END -->
+</div>
