@@ -1,5 +1,4 @@
-function showTab(id) {
-    
+function showTab(id) {    
     //contacts page
     if (id == 'contactList') {
         document.getElementById('contactList').style.display = 'inline';
