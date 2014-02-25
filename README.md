@@ -1,6 +1,6 @@
 Student Name : Alex Fournier
 
-EMail Address : four0126@algonquinlive.com
+Email Address : four0126@algonquinlive.com
 
 Student Number : 040 597 732
 
