@@ -1,10 +1,6 @@
 BB10 My Algonquin Life
 ======================
 
-Author Name : Alex Fournier
-
-Email Address : four0126@algonquinlive.com
-
 The application provided information and a resource for students new to the Algonquin Campus.
 Features:
 
@@ -22,3 +18,8 @@ Features:
 
 
 The app was created using HTML5/CSS3/JavaScript/jQuery and stored data using SQLite as the primary database.
+
+===
+> Author Name : Alex Fournier
+>
+> Email Address : four0126@algonquinlive.com
