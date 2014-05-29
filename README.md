@@ -10,8 +10,6 @@ Features:
 
 •	Collect and view new contacts
 
-•	Create a user name and ??
-
 •	Look up campus services
 
 •	Find bus schedules.
